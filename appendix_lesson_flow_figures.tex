@@ -1,0 +1,69 @@
+\section*{Appendix: Working-Memory-Friendly Lesson Flow Figures}
+
+\textbf{Design note:} These visual figures are meant to support teachers and students who benefit from seeing the whole learning path at once. Each figure separates the build sequence, teacher support, and evidence so the lesson can be followed without holding every step in working memory.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+stepbox/.style={rounded corners=3pt, draw=LessonOneAccent, fill=LessonOneSoft, thick, align=center, minimum height=0.48in, text width=1.05in, font=\scriptsize},
+widebox/.style={rounded corners=3pt, draw=LessonOneAccent, fill=white, thick, align=left, text width=6.65in, inner sep=5pt, font=\scriptsize},
+arrow/.style={-{Stealth[length=2mm]}, thick, draw=LessonOneAccent}
+]
+\node[stepbox] (a) {Notice\\meaning};
+\node[stepbox, right=0.13in of a] (b) {Choose\\place};
+\node[stepbox, right=0.13in of b] (c) {Sketch\\features};
+\node[stepbox, right=0.13in of c] (d) {Begin\\prototype};
+\node[stepbox, right=0.13in of d] (e) {Explain\\choice};
+\draw[arrow] (a) -- (b);
+\draw[arrow] (b) -- (c);
+\draw[arrow] (c) -- (d);
+\draw[arrow] (d) -- (e);
+\node[widebox, below=0.18in of c] (support) {\textbf{Teacher support:} Model decomposition, protect private identity choices, offer role options, and keep the first build step visible.};
+\node[widebox, below=0.10in of support] (evidence) {\textbf{Evidence:} Planning card, prototype or sketch, partner explanation, and exit slip.};
+\end{tikzpicture}
+\caption{Lesson 1 visual flow: Plan a Meaningful Place.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+stepbox/.style={rounded corners=3pt, draw=LessonTwoAccent, fill=LessonTwoSoft, thick, align=center, minimum height=0.48in, text width=1.05in, font=\scriptsize},
+widebox/.style={rounded corners=3pt, draw=LessonTwoAccent, fill=white, thick, align=left, text width=6.65in, inner sep=5pt, font=\scriptsize},
+arrow/.style={-{Stealth[length=2mm]}, thick, draw=LessonTwoAccent}
+]
+\node[stepbox] (a) {Pick\\feature};
+\node[stepbox, right=0.13in of a] (b) {Build\\and code};
+\node[stepbox, right=0.13in of b] (c) {Test\\world};
+\node[stepbox, right=0.13in of c] (d) {Debug\\issue};
+\node[stepbox, right=0.13in of d] (e) {Label\\change};
+\draw[arrow] (a) -- (b);
+\draw[arrow] (b) -- (c);
+\draw[arrow] (c) -- (d);
+\draw[arrow] (d) -- (e);
+\node[widebox, below=0.18in of c] (support) {\textbf{Teacher support:} Normalize debugging, conference with short prompts, and connect technical changes back to meaning.};
+\node[widebox, below=0.10in of support] (evidence) {\textbf{Evidence:} Debug log, before/after note, screenshot label, and oral explanation.};
+\end{tikzpicture}
+\caption{Lesson 2 visual flow: Build, Code, and Debug.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+stepbox/.style={rounded corners=3pt, draw=LessonThreeAccent, fill=LessonThreeSoft, thick, align=center, minimum height=0.48in, text width=1.05in, font=\scriptsize},
+widebox/.style={rounded corners=3pt, draw=LessonThreeAccent, fill=white, thick, align=left, text width=6.65in, inner sep=5pt, font=\scriptsize},
+arrow/.style={-{Stealth[length=2mm]}, thick, draw=LessonThreeAccent}
+]
+\node[stepbox] (a) {Prepare\\share};
+\node[stepbox, right=0.13in of a] (b) {Present\\world};
+\node[stepbox, right=0.13in of b] (c) {Collect\\feedback};
+\node[stepbox, right=0.13in of c] (d) {Revise\\for welcome};
+\node[stepbox, right=0.13in of d] (e) {Reflect\\on design};
+\draw[arrow] (a) -- (b);
+\draw[arrow] (b) -- (c);
+\draw[arrow] (c) -- (d);
+\draw[arrow] (d) -- (e);
+\node[widebox, below=0.18in of c] (support) {\textbf{Teacher support:} Provide sentence stems, protect choice, guide respectful feedback, and invite students to revise one small piece.};
+\node[widebox, below=0.10in of support] (evidence) {\textbf{Evidence:} Final screenshot or live view, peer feedback note, revision note, and exit reflection.};
+\end{tikzpicture}
+\caption{Lesson 3 visual flow: Share, Revise, and Reflect.}
+\end{figure}
